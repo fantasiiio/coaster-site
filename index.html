@@ -7,17 +7,20 @@
     <title>Roller Coaster Wagon Design Project</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fafafa;
+            /* Softened background color */
+            color: #555;
+            /* Darker text for better readability on softer background */
+            line-height: 1.8;
             margin: 0;
             padding: 0;
             padding-top: 20px;
         }
 
         a {
-            color: #007bff;
+            color: #006699;
+            /* Softer blue */
             text-decoration: none;
         }
 
@@ -25,76 +28,123 @@
             text-decoration: underline;
         }
 
-        p {
-            margin: 20px;
-        }
-
+        p,
+        ul,
         h1,
         h2,
         h3,
         h4,
         h5,
         h6 {
-            color: #333;
+            margin: 20px 0;
+            /* Increased whitespace around text */
         }
 
         ul {
-            margin: 20px;
             list-style-type: none;
+            padding-left: 20px;
+            /* Add some padding to align list items */
         }
 
         li {
             margin-bottom: 10px;
         }
 
-        /* Container for content */
         .container {
             width: 80%;
             margin: auto;
-            background: #fff;
+            background: #ffffff;
+            /* White background for the content area */
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            /* Softer shadow */
+            border-radius: 8px;
+            /* Rounded corners for a softer look */
         }
 
-        /* Styling for the project objectives and specifications sections */
         .objectives,
         .design-specifications {
-            background-color: #e9ecef;
-            border-left: 4px solid #007bff;
-            padding: 10px;
+            background-color: #f7f7f7;
+            /* Soft background color */
+            padding: 20px;
             margin: 20px 0;
+            border-radius: 4px;
+            /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Medium shadow for more depth */
         }
 
-        /* Highlighting strong tags for emphasis */
         strong {
-            color: #007bff;
+            color: #005577;
+            /* Darker shade for emphasis */
         }
 
-        /* Styling for the download link to make it stand out */
         .download-link {
             display: inline-block;
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 15px;
+            background-color: #89CFF0;
+            /* Softer, light blue */
+            color: #ffffff;
+            /* Keep text color white for contrast */
+            padding: 12px 20px;
+            /* Slightly larger padding for a fuller button appearance */
             margin: 20px 0;
-            border-radius: 5px;
+            /* Unchanged */
+            border-radius: 25px;
+            /* Significantly rounded corners for a pill shape */
             transition: background-color 0.3s;
+            text-align: center;
+            /* Ensure text is centered */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Soft shadow for depth */
+            font-weight: bold;
+            /* Make the button text stand out */
+            text-decoration: none;
+            /* Remove underline from links */
         }
 
         .download-link:hover {
-            background-color: #0056b3;
+            background-color: #72B6D7;
+            /* Darker shade of blue for hover effect */
+            color: #ffffff;
+            /* Ensure text color stays white on hover */
+            text-decoration: none;
+            /* Continue to remove underline on hover */
         }
 
-        img, a {
+        img,
+        a {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 20px auto;
+            /* Adjusted to add space around images and center them */
         }
+
+        .page-title {
+            font-size: 48px; /* Large font size for prominence */
+            text-align: center; /* Center the title */
+            color: #555; /* Soft color that matches the page's theme */
+            margin: 40px 0; /* Add some space around the title */
+            font-weight: bold; /* Make the title bold */
+        }
+        .business-goal {
+            background-color: #f7f7f7; /* Soft background color for consistency */
+            margin: 20px auto; /* Aligns with other content margins */
+            padding: 20px; /* Padding for spacing inside the section */
+            border-radius: 4px; /* Rounded corners for a softer look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Medium shadow for depth */
+            font-size: 20px; /* Slightly larger font size for emphasis */
+            max-width: 80%; /* Matches the container width */
+        }                
     </style>
 </head>
 
 <body>
+    <div class="page-title">Futuristic Roller Coaster Wagon Project</div>  
+    
     <div class="container">
+        <section class="objectives">
+            <h1>Business Goal</h1>
+            <p>My business goal is to create a software that can take any track of any roller coaster in the world, open it in my software, configure it, and click build. Then, I'll have a 3D printed track with all supports. I'll probably sell it with the STL of the wagon.</p>
+        </section>
         <section class="objectives">
             <h1>Futuristic Roller Coaster Wagon Design</h1>
             <p>I'm looking for an experienced 3D designer specialized in <strong>Solidworks</strong> to create a body
@@ -132,15 +182,6 @@
             </ul>
         </section>
         <section class="design-specifications">
-            <p>Deliverables: Solidworks document of the 3D model, including all components (body, seats, and restraint
-                mechanisms). A detailed report or presentation on the design process, focusing on the mechanical
-                functionality and aesthetic considerations, is also required.</p>
-
-            <h2>Downloads:</h2>
-            <a href="coaster-car.sldprt" class="download-link">coaster-car.sldprt</a>
-            <a href="coaster-car.step" class="download-link">coaster-car.step</a>
-        </section>
-        <section class="design-specifications">
             <a href="https://griffinschobel.com/rollercoaster-restraint-system">
                 <h2>restraint-system (click to visit)</h2>
             </a>
@@ -153,7 +194,15 @@
             <h2>Style example</h2>
             <img src="futuristic-coaster.jpg">
         </section>
+        <section class="design-specifications">
+            <p>Deliverables: Solidworks document of the 3D model, including all components (body, seats, and restraint
+                mechanisms). A detailed report or presentation on the design process, focusing on the mechanical
+                functionality and aesthetic considerations, is also required.</p>
 
+            <h2>Downloads:</h2>
+            <a href="coaster-car.sldprt" class="download-link">coaster-car.sldprt</a>
+            <a href="coaster-car.step" class="download-link">coaster-car.step</a>
+        </section>
     </div>
 </body>
 
